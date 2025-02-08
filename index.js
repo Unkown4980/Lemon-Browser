@@ -1,7 +1,7 @@
-let input = "https://example.com/home/help/typehere";
+let input = "https://example.com";
 
 function promtuser() {
-    input = window.prompt("Enter the URL of the website you want to visit", "example.com");
+    input = window.prompt("Enter the URL of the website you want to visit", "https://example.com");
     go();
 }
 
@@ -19,4 +19,11 @@ document.getElementById('input').addEventListener('keydown', function(event) {
 function go() {
     const iframe = document.getElementById('browserFrame');
     iframe.src = input;
+    updateUrl();
+}
+
+function updateUrl() {
+    var iframe = document.getElementById('browserFrame');
+    var urlSpan = document.getElementById('url');
+    urlSpan.textContent = iframe.src;
 }

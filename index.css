@@ -1,8 +1,9 @@
 body {
     background-color: lightyellow;
+    font-family: arial;
 }
 input {
-    width: 30%;
+    width: auto;
     box-sizing: border-box;
     padding: -10px 30px;
     margin: 8px 0;
@@ -29,4 +30,10 @@ button:hover {
 iframe {
     border: 2px solid black !important;
     background: linear-gradient(to right, red, blue);
+}
+
+p {
+    margin: 10px 0;
+    font-weight: bold;
+    color: black;
 }
